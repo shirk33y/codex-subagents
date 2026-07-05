@@ -6,7 +6,7 @@ model_reasoning_effort = "high"
 sandbox_mode = "read-only"
 
 model_context_window = 128000
-model_auto_compact_token_limit = 96000
+model_auto_compact_token_limit = 120000
 
 developer_instructions = """
 Review like a strict maintainer.
