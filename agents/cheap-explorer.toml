@@ -1,0 +1,17 @@
+name = "cheap_explorer"
+description = "Cheap read-only repo explorer. Use first for codebase mapping, file search, dependency tracing, logs, and summarizing relevant context before implementation."
+
+model = "gpt-5.4-mini"
+model_reasoning_effort = "low"
+sandbox_mode = "read-only"
+
+model_context_window = 64000
+model_auto_compact_token_limit = 48000
+
+developer_instructions = """
+Do not edit files.
+Prefer ripgrep, git grep, git log, and targeted file reads.
+Map real execution paths and cite file paths, symbols, tests, and config files.
+Return concise findings only.
+Avoid broad rewrites, speculation, and long pasted snippets.
+"""
